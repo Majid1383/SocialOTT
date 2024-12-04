@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="23094" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_12" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="23084"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="movieListingCVCell" id="gTV-IL-0wX" customClass="movieListingCVCell" customModule="SocialOTT" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="358" height="85"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                <rect key="frame" x="0.0" y="0.0" width="358" height="85"/>
+                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                <subviews>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="7gl-VH-ssg">
+                        <rect key="frame" x="5" y="5" width="348" height="75"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" usesAttributedText="YES" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="mCo-EO-T9K">
+                                <rect key="frame" x="26.666666666666657" y="11" width="295" height="53"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="53" id="1ED-mQ-vPn"/>
+                                    <constraint firstAttribute="width" constant="295" id="c0q-ZH-WiD"/>
+                                </constraints>
+                                <attributedString key="attributedText">
+                                    <fragment content="Label">
+                                        <attributes>
+                                            <color key="NSColor" red="0.99215686319999996" green="1" blue="0.96470588450000005" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                            <font key="NSFont" size="24" name="AmericanTypewriter-Semibold"/>
+                                            <paragraphStyle key="NSParagraphStyle" alignment="center" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
+                                        </attributes>
+                                    </fragment>
+                                </attributedString>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <constraints>
+                            <constraint firstItem="mCo-EO-T9K" firstAttribute="centerX" secondItem="7gl-VH-ssg" secondAttribute="centerX" id="6ai-LW-klC"/>
+                            <constraint firstItem="mCo-EO-T9K" firstAttribute="centerY" secondItem="7gl-VH-ssg" secondAttribute="centerY" id="72Y-Tl-3yf"/>
+                        </constraints>
+                    </view>
+                </subviews>
+            </view>
+            <viewLayoutGuide key="safeArea" id="ZTg-uK-7eu"/>
+            <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+            <constraints>
+                <constraint firstItem="7gl-VH-ssg" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" constant="5" id="JB2-0q-aOq"/>
+                <constraint firstAttribute="bottom" secondItem="7gl-VH-ssg" secondAttribute="bottom" constant="5" id="TFJ-OF-7iA"/>
+                <constraint firstAttribute="trailing" secondItem="7gl-VH-ssg" secondAttribute="trailing" constant="5" id="YKo-KE-T4P"/>
+                <constraint firstItem="7gl-VH-ssg" firstAttribute="top" secondItem="gTV-IL-0wX" secondAttribute="top" constant="5" id="ezT-n0-csv"/>
+            </constraints>
+            <size key="customSize" width="297" height="72"/>
+            <connections>
+                <outlet property="lblMovieListing" destination="mCo-EO-T9K" id="0R8-pE-p6p"/>
+                <outlet property="mainView" destination="7gl-VH-ssg" id="ve7-oJ-3qC"/>
+            </connections>
+            <point key="canvasLocation" x="337.40458015267177" y="-18.661971830985916"/>
+        </collectionViewCell>
+    </objects>
+</document>

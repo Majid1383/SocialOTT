@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="23094" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_12" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="23084"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="MovieDetailedSubTopicCell" id="gTV-IL-0wX" customClass="MovieDetailedSubTopicCell" customModule="SocialOTT" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="226" height="45"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                <rect key="frame" x="0.0" y="0.0" width="226" height="45"/>
+                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                <subviews>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Bzc-Qs-ji7">
+                        <rect key="frame" x="3.6666666666666714" y="4" width="219" height="37"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="2x2-N3-c72">
+                                <rect key="frame" x="41.333333333333343" y="34" width="183" height="3"/>
+                                <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="3" id="eoP-YC-4mQ"/>
+                                </constraints>
+                            </view>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" usesAttributedText="YES" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="LZw-8c-Jp8">
+                                <rect key="frame" x="9.3333333333333286" y="8.6666666666666643" width="200" height="20"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="20" id="MDY-aW-jYA"/>
+                                    <constraint firstAttribute="width" constant="200" id="Sqn-HM-Duk"/>
+                                </constraints>
+                                <attributedString key="attributedText">
+                                    <fragment content="Label">
+                                        <attributes>
+                                            <color key="NSColor" red="0.99215686319999996" green="1" blue="0.96470588450000005" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                            <font key="NSFont" size="23" name="AmericanTypewriter-Semibold"/>
+                                            <paragraphStyle key="NSParagraphStyle" alignment="center" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
+                                        </attributes>
+                                    </fragment>
+                                </attributedString>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="37" id="8dq-AY-6Jl"/>
+                            <constraint firstItem="2x2-N3-c72" firstAttribute="top" secondItem="LZw-8c-Jp8" secondAttribute="bottom" constant="5.3333333333333357" id="OXm-0Q-XWz"/>
+                            <constraint firstAttribute="trailing" secondItem="2x2-N3-c72" secondAttribute="trailing" constant="-5.3333333333333428" id="Pmt-7M-me3"/>
+                            <constraint firstItem="2x2-N3-c72" firstAttribute="leading" secondItem="Bzc-Qs-ji7" secondAttribute="leading" constant="41.333333333333343" id="QNN-Dl-zQT"/>
+                            <constraint firstAttribute="width" constant="219" id="UKe-7L-mNE"/>
+                            <constraint firstItem="LZw-8c-Jp8" firstAttribute="centerY" secondItem="Bzc-Qs-ji7" secondAttribute="centerY" id="gGG-FO-x2j"/>
+                            <constraint firstItem="LZw-8c-Jp8" firstAttribute="centerX" secondItem="Bzc-Qs-ji7" secondAttribute="centerX" id="qkG-Rv-ctl"/>
+                        </constraints>
+                    </view>
+                </subviews>
+            </view>
+            <viewLayoutGuide key="safeArea" id="ZTg-uK-7eu"/>
+            <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+            <constraints>
+                <constraint firstItem="Bzc-Qs-ji7" firstAttribute="centerX" secondItem="gTV-IL-0wX" secondAttribute="centerX" id="WP4-3O-Ara"/>
+                <constraint firstItem="Bzc-Qs-ji7" firstAttribute="centerY" secondItem="gTV-IL-0wX" secondAttribute="centerY" id="inF-hw-rQH"/>
+            </constraints>
+            <size key="customSize" width="272" height="94"/>
+            <connections>
+                <outlet property="lblSubtopics" destination="LZw-8c-Jp8" id="oSG-U4-3Uc"/>
+                <outlet property="mainView" destination="Bzc-Qs-ji7" id="Sbx-vk-uIF"/>
+                <outlet property="selectedView" destination="2x2-N3-c72" id="M1z-g5-6Lq"/>
+            </connections>
+            <point key="canvasLocation" x="296.18320610687022" y="3.8732394366197185"/>
+        </collectionViewCell>
+    </objects>
+</document>
